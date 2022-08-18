@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
-  // TODO: code goes here
+  //password generation
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -10,7 +10,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
+// added password variables
 function generatePassword() {
   var numbers = '0123456789';
   var lowercase = 'abdefghijklmnopqrstuvwxyz';
@@ -58,8 +58,11 @@ function generatePassword() {
   var finalIndexPosition = Math.floor (firstIndexPosition);
   var finalCharacter = potentialCharacters.charAt(finalIndexPosition);
     
-    // let rng =[Math.floor(Math.random() * potentialCharacters.length)];
-    // or finalPassword += potentialCharacters[rng];
+  // deleted below code as it created erros
+  // let rng =[Math.floor(Math.random() * potentialCharacters.length)];
+  // or finalPassword += potentialCharacters[rng];
+
+  // Final password
     finalPassword = finalPassword + finalCharacter;
   }
   return finalPassword;
